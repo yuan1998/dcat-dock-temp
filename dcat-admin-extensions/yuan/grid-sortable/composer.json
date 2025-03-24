@@ -1,0 +1,32 @@
+{
+    "name": "yuan/grid-sortable",
+    "alias": "",
+    "description": "让表格可以拖拽排序...",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://gitee.com/yuan1998/dcat-admin-grid-sortable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaun1998",
+            "email": "chizhiyueshu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yuan\\Admin\\GridSortable\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Yuan\\Admin\\GridSortable\\GridSortableServiceProvider",
+        "laravel": {
+            "providers": [
+                "Yuan\\Admin\\GridSortable\\GridSortableServiceProvider"
+            ]
+        }
+    }
+}
